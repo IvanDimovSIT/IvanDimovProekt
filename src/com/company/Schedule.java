@@ -1,16 +1,16 @@
 package com.company;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Schedule {
     private Map<LocalDate, HallsDay> halls;
-    private final int numberOfHalls;
-    private final int[] hallRows;
-    private final int[] hallSeats;
+    private int numberOfHalls;
+    private int[] hallRows;
+    private int[] hallSeats;
 
+    public Schedule(){}
 
     public Schedule(int numberOfHalls, int[] hallRows, int[] hallSeats) {
         this.numberOfHalls = numberOfHalls;
@@ -32,4 +32,23 @@ public class Schedule {
     }
 
 
+    public Map<LocalDate, HallsDay> getHalls() {
+        return halls;
+    }
+
+    public void setHalls(Map<LocalDate, HallsDay> halls) {
+        this.halls = halls;
+    }
+
+    public int getNumberOfHalls() {
+        return numberOfHalls;
+    }
+
+    public int[] getHallRows() {
+        return hallRows;
+    }
+
+    public int[] getHallSeats() {
+        return hallSeats;
+    }
 }

@@ -3,6 +3,8 @@ package com.company;
 public class HallsDay {
     private Hall[] halls;
 
+    public HallsDay(){}
+
     public HallsDay(int numberOfHalls, int[] hallRows, int[] hallSeats) {
         halls = new Hall[numberOfHalls];
         for (int i=0; i<numberOfHalls; i++) {
@@ -18,4 +20,12 @@ public class HallsDay {
         halls[hallNum] = hall;
     }
 
+
+    public Hall[] getHalls() {
+        return halls;
+    }
+
+    public void setHalls(Hall[] halls) {
+        this.halls = halls;
+    }
 }

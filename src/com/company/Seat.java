@@ -6,6 +6,7 @@ public class Seat {
     private int place;
     private String note;
 
+    public Seat(){}
 
     public Seat(int row, int place) {
         this.row = row;
@@ -41,5 +42,14 @@ public class Seat {
     @Override
     public String toString() {
         return "[row:"+(row+1)+" seat:"+(place+1)+"]";
+    }
+
+
+    public void setRow(int row) {
+        this.row = row;
+    }
+
+    public void setPlace(int place) {
+        this.place = place;
     }
 }
