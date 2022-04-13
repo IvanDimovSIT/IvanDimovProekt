@@ -2,7 +2,7 @@ package com.company;
 
 import java.io.FileNotFoundException;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 
 public class CommandProcessor implements ProcessCommand{
     private Schedule schedule;
@@ -66,7 +66,6 @@ public class CommandProcessor implements ProcessCommand{
         String[] params1 = params[1].split(" ", 3);
         if(params1.length!=3)
             throw new CommandException("Incorrect parameters");
-
         LocalDate date = LocalDate.parse(params1[0]);
         int hall = Integer.parseInt(params1[1]);
         String name = params1[2].replace("\"","");
@@ -76,6 +75,14 @@ public class CommandProcessor implements ProcessCommand{
             throw new CommandException(e.getMessage());
         }
         System.out.println("event added");
+    }
+
+    public void help(){
+        System.out.println("The following commands are supported:");
+        Help help = new Commands.Help();
+        for (String i: help.allCommands()) {
+            System.out.println(i);
+        }
     }
 
     @Override
@@ -93,12 +100,18 @@ public class CommandProcessor implements ProcessCommand{
             case "open":
                 open(command);
                 break;
+            case "help":
+                help();
+                break;
             case "addevent":
-                addEvent(command);
+                try {
+                    addEvent(command);
+                }catch (DateTimeParseException e){
+                    System.out.println("Incorrect date formatting!");
+                }
                 break;
             default:
                 throw new CommandException("Command not recognised!");
         }
-
     }
 }

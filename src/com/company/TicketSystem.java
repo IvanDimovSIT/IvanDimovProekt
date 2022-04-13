@@ -8,6 +8,7 @@ public class TicketSystem {
     private static final int[] rows = {5, 6, 8, 9};
     private static final int[] seats = {12, 10, 14, 19};
     private Schedule schedule;
+
     private TicketSystem(){
         schedule = new Schedule(TicketSystem.numberOfHalls, TicketSystem.rows, TicketSystem.seats);
     }
@@ -26,7 +27,8 @@ public class TicketSystem {
         while(true){
             System.out.print('>');
             input = scanner.nextLine();
-            if(input.equals("exit"))break;
+            if(input.equals("exit"))
+                break;
             command = input.split(" ", 2);
             try {
                 processCommand.process(command);
@@ -34,7 +36,6 @@ public class TicketSystem {
                 System.out.println(e.getMessage());
             }
         }
-
     }
 
 }

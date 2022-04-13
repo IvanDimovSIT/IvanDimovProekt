@@ -38,7 +38,6 @@ public class Schedule {
         }
     }
 
-
     public Map<LocalDate, HallsDay> getHalls() {
         return halls;
     }

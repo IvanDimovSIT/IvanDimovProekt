@@ -12,6 +12,7 @@ public class ScheduleDAO implements com.company.ScheduleDAO {
     public void saveToFile(Schedule schedule, String fileName)throws FileNotFoundException {
 
         XMLEncoder encoder=new XMLEncoder(new BufferedOutputStream(new FileOutputStream(fileName)));
+        //https://stackoverflow.com/questions/41373566/localdate-serialization-error
         encoder.setPersistenceDelegate(LocalDate.class, new PersistenceDelegate() {
             @Override
             protected Expression instantiate(Object oldInstance, Encoder out) {
