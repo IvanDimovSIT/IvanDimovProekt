@@ -1,10 +1,13 @@
 package com.company;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class Main {
 
     public static void main(String[] args) {
+        /*
         int[] rows = {4, 5};
         int[] seats = {8, 12};
 
@@ -17,6 +20,9 @@ public class Main {
         } catch (EventsException e) {
             e.printStackTrace();
         }
+        */
+        TicketSystem ticketSystem = TicketSystem.getInstance();
+        ticketSystem.start();
 
     }
 }

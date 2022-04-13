@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class TicketSystem {
     private static TicketSystem instance;
     private static final int numberOfHalls = 4;
@@ -14,6 +16,25 @@ public class TicketSystem {
         if(instance==null)
             instance = new TicketSystem();
         return instance;
+    }
+
+    public void start(){
+        ProcessCommand processCommand = new CommandProcessor(schedule, numberOfHalls, rows, seats);
+        Scanner scanner = new Scanner(System.in);
+        String input;
+        String[] command;
+        while(true){
+            System.out.print('>');
+            input = scanner.nextLine();
+            if(input.equals("exit"))break;
+            command = input.split(" ", 2);
+            try {
+                processCommand.process(command);
+            }catch (CommandException e){
+                System.out.println(e.getMessage());
+            }
+        }
+
     }
 
 }

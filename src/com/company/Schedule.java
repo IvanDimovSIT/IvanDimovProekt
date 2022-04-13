@@ -19,6 +19,13 @@ public class Schedule {
         halls = new HashMap<>();
     }
 
+    public void reset(int numberOfHalls, int[] hallRows, int[] hallSeats){
+        this.numberOfHalls = numberOfHalls;
+        this.hallRows = hallRows;
+        this.hallSeats = hallSeats;
+        halls = new HashMap<>();
+    }
+
     public HallsDay getHallsForDay(LocalDate date){
         return halls.get(date);
     }
@@ -50,5 +57,17 @@ public class Schedule {
 
     public int[] getHallSeats() {
         return hallSeats;
+    }
+
+    public void setNumberOfHalls(int numberOfHalls) {
+        this.numberOfHalls = numberOfHalls;
+    }
+
+    public void setHallRows(int[] hallRows) {
+        this.hallRows = hallRows;
+    }
+
+    public void setHallSeats(int[] hallSeats) {
+        this.hallSeats = hallSeats;
     }
 }
