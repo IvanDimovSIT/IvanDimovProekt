@@ -2,7 +2,6 @@ package com.company;
 
 import java.io.FileNotFoundException;
 import java.time.LocalDate;
-import java.time.format.DateTimeParseException;
 import java.util.List;
 
 public class CommandProcessor implements ProcessCommand{
@@ -43,6 +42,7 @@ public class CommandProcessor implements ProcessCommand{
     private void close(){
         CloseFile closeFile = new Commands.CloseFile();
         closeFile.closeFile(schedule, numberOfHalls, rows, seats);
+        lastFile = null;
         System.out.println("file closed");
     }
 
@@ -106,6 +106,20 @@ public class CommandProcessor implements ProcessCommand{
 
     }
 
+    private void book(String[] params)throws CommandException{
+        if(params.length !=2)
+            throw new CommandException("Incorrect parameters");
+        String[] params1 = params[1].split(" ", 5);
+        int row = Integer.parseInt(params1[0])-1;
+        int seat = Integer.parseInt(params1[1])-1;
+        LocalDate date = LocalDate.parse(params1[2]);
+        String name = params1[3];
+        String note = params1[4];
+        Book book = new Commands.Book();
+        book.book(schedule, row, seat, date, name, note);
+        System.out.println("Seat Booked");
+    }
+
     @Override
     public void process(String[] command)throws CommandException {
         switch (command[0]){
@@ -129,6 +143,9 @@ public class CommandProcessor implements ProcessCommand{
                 break;
             case "freeseats":
                 freeSeats(command);
+                break;
+            case "book":
+                book(command);
                 break;
             default:
                 throw new CommandException("Command not recognised!");

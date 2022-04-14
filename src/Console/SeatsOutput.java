@@ -11,7 +11,10 @@ public class SeatsOutput implements com.company.SeatsOutput {
         if(seats.size()==0)System.out.println("No seats");
         else
         for (Seat seat: seats) {
-            System.out.println(seat);
+            if(seat.getNote() != null && !seat.getNote().isEmpty())
+                System.out.println(seat + "-" + seat.getNote());
+            else
+                System.out.println(seat);
         }
     }
 }

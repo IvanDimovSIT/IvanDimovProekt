@@ -31,12 +31,15 @@ public class TicketSystem {
             if(input.equals("exit"))
                 break;
             command = input.split(" ", 2);
+
             try {
                 processCommand.process(command);
             }catch (CommandException e){
                 System.out.println(e.getMessage());
             }catch (DateTimeParseException e){
-            System.out.println("Incorrect date formatting!");
+                System.out.println("Incorrect date formatting!");
+            }catch (NumberFormatException e){
+                System.out.println("Incorrectly entered number!");
             }
         }
     }
