@@ -8,7 +8,8 @@ public class Help implements com.company.Help {
             "saveas <file>\t\t\t\t\tsaves the currently opened file in <file>",
             "help\t\t\t\t\t\t\tprints this information",
             "exit\t\t\t\t\t\t\texits the program",
-            "addevent <date> <hall> <name>\tAdds a new event on <date> with name <name> in <hall>"
+            "addevent <date> <hall> <name>\tAdds a new event on <date> with name <name> in <hall>",
+            "freeseats <date> <name>\t\t\tLists all the free seats(not booked or bought) for the event <name> on <date>"
     };
 
     @Override

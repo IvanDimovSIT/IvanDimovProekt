@@ -1,5 +1,6 @@
 package com.company;
 
+import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
 public class TicketSystem {
@@ -34,6 +35,8 @@ public class TicketSystem {
                 processCommand.process(command);
             }catch (CommandException e){
                 System.out.println(e.getMessage());
+            }catch (DateTimeParseException e){
+            System.out.println("Incorrect date formatting!");
             }
         }
     }

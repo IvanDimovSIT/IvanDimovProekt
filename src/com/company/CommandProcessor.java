@@ -3,6 +3,7 @@ package com.company;
 import java.io.FileNotFoundException;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
+import java.util.List;
 
 public class CommandProcessor implements ProcessCommand{
     private Schedule schedule;
@@ -85,6 +86,26 @@ public class CommandProcessor implements ProcessCommand{
         }
     }
 
+    public void freeSeats(String[] params)throws CommandException{
+        if(params.length !=2)
+            throw new CommandException("Incorrect parameters");
+        String[] params1 = params[1].split(" ", 2);
+        if(params.length!=2)
+            throw new CommandException("Incorrect parameters");
+        FreeSeats freeSeats = new Commands.FreeSeats();
+        LocalDate date = LocalDate.parse(params1[0]);
+        String name = params1[1].replace("\"", "");
+        List<Seat> free;
+        try {
+            free = freeSeats.listFreeSeats(schedule, date, name);
+        } catch (EventsException e) {
+            throw new CommandException(e.getMessage());
+        }
+        SeatsOutput seatsOutput = new Console.SeatsOutput();
+        seatsOutput.print(free);
+
+    }
+
     @Override
     public void process(String[] command)throws CommandException {
         switch (command[0]){
@@ -104,11 +125,10 @@ public class CommandProcessor implements ProcessCommand{
                 help();
                 break;
             case "addevent":
-                try {
-                    addEvent(command);
-                }catch (DateTimeParseException e){
-                    System.out.println("Incorrect date formatting!");
-                }
+                addEvent(command);
+                break;
+            case "freeseats":
+                freeSeats(command);
                 break;
             default:
                 throw new CommandException("Command not recognised!");
