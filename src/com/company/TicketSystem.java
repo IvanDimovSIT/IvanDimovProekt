@@ -30,7 +30,7 @@ public class TicketSystem {
             input = scanner.nextLine();
             if(input.equals("exit"))
                 break;
-            command = input.split(" ", 2);
+            command = input.trim().split(" ", 2);
 
             try {
                 processCommand.process(command);

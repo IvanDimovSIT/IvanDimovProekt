@@ -3,7 +3,6 @@ package Commands;
 import com.company.*;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 
 public class FreeSeats implements com.company.FreeSeats {
@@ -18,18 +17,8 @@ public class FreeSeats implements com.company.FreeSeats {
         }
         if(hall == null)throw new EventsException("No \""+name+"\" shows on this date");
 
-        List<Seat> freeSeats = new ArrayList<>();
-        for (int row = 0; row < hall.getMaxRows(); row++) {
-            for (int seat = 0; seat < hall.getMaxSeats(); seat++) {
-                try {
-                    if (hall.getSeat(row, seat).getSeatState() == SeatState.Free)
-                        freeSeats.add(hall.getSeat(row, seat));
-                }catch (SeatException e){
-                    e.printStackTrace();
-                }
-            }
-        }
+        FindSeats freeSeats = new ListSeats();
 
-        return freeSeats;
+        return freeSeats.findSeats(hall, SeatState.Free);
     }
 }

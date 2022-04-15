@@ -116,6 +116,7 @@ public class CommandProcessor implements ProcessCommand{
         book.book(schedule, row, seat, date, name, note);
         System.out.println("Seat Booked");
     }
+
     private void unbook(String[] params)throws CommandException{
         if(params.length !=2)
             throw new CommandException("Incorrect parameters");
@@ -129,6 +130,37 @@ public class CommandProcessor implements ProcessCommand{
         Unbook unbook = new Commands.Unbook();
         unbook.unbook(schedule, row, seat, date, name);
         System.out.println("Seat Unbooked");
+    }
+
+    private void buy(String[] params)throws CommandException{
+        if(params.length !=2)
+            throw new CommandException("Incorrect parameters");
+        String[] params1 = params[1].split(" ", 4);
+        if(params1.length != 4)
+            throw new CommandException("Incorrect parameters");
+        int row = Integer.parseInt(params1[0])-1;
+        int seat = Integer.parseInt(params1[1])-1;
+        LocalDate date = LocalDate.parse(params1[2]);
+        String name = params1[3].replace("\"", "");
+        Buy buy = new Commands.Buy();
+        String code = buy.buy(schedule, row, seat, date, name);
+        System.out.println("Seat code: "+code);
+    }
+
+    private void bookings(String[] params)throws CommandException{
+        Bookings bookings = new Commands.Bookings();
+        SeatsOutput seatsOutput = new Console.SeatsOutput();
+        List<Seat> booked;
+        LocalDate date = null;
+        String name = null;
+        if(params.length == 2){
+            String[] params1 = params[1].split(" ", 2);
+            date = LocalDate.parse(params1[0]);
+            if(params1.length==2 && params1[1] != null)
+                name = params1[1];
+        }
+        booked = bookings.getBookedSeats(schedule, date, name);
+        seatsOutput.print(booked);
     }
 
     @Override
@@ -160,6 +192,12 @@ public class CommandProcessor implements ProcessCommand{
                 break;
             case "unbook":
                 unbook(command);
+                break;
+            case "buy":
+                buy(command);
+                break;
+            case "bookings":
+                bookings(command);
                 break;
             default:
                 throw new CommandException("Command not recognised!");
