@@ -10,7 +10,8 @@ public class Help implements com.company.Help {
             "exit\t\t\t\t\t\t\t\t\texits the program",
             "addevent <date> <hall> <name>\t\t\tAdds a new event on <date> with name <name> in <hall>",
             "freeseats <date> <name>\t\t\t\t\tLists all the free seats(not booked or bought) for the event <name> on <date>",
-            "book <row> <seat> <date> <name> <note>\tBooks a ticket for <name> on <date> in seat <row> <seat> and adds a note <note>"
+            "book <row> <seat> <date> <name> <note>\tBooks a ticket for the show <name> on <date> in seat <row> <seat> and adds a note <note>",
+            "unbook <row> <seat> <date> <name>\t\tUnbooks the seat for the show <name> on <date> on row <row> in seat <seat>"
     };
 
     @Override

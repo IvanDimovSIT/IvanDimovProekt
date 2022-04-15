@@ -1,6 +1,5 @@
 package com.company;
 
-import java.io.FileNotFoundException;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -29,7 +28,7 @@ public class CommandProcessor implements ProcessCommand{
         System.out.println("file saved");
     }
 
-    private void save(){
+    private void save() throws CommandException{
         SaveAs saveAs = new Commands.SaveAs();
         if(lastFile != null) {
             saveAs.saveAs(schedule, lastFile);
@@ -52,11 +51,7 @@ public class CommandProcessor implements ProcessCommand{
         OpenFile openFile = new Commands.OpenFile();
         String fileName = params[1].replace("\"", "");
         lastFile = fileName;
-        try {
-            openFile.open(schedule, fileName);
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found!");
-        }
+        openFile.open(schedule, fileName);
         System.out.println("file opened");
     }
 
@@ -110,6 +105,8 @@ public class CommandProcessor implements ProcessCommand{
         if(params.length !=2)
             throw new CommandException("Incorrect parameters");
         String[] params1 = params[1].split(" ", 5);
+        if(params1.length != 5)
+            throw new CommandException("Incorrect parameters");
         int row = Integer.parseInt(params1[0])-1;
         int seat = Integer.parseInt(params1[1])-1;
         LocalDate date = LocalDate.parse(params1[2]);
@@ -118,6 +115,20 @@ public class CommandProcessor implements ProcessCommand{
         Book book = new Commands.Book();
         book.book(schedule, row, seat, date, name, note);
         System.out.println("Seat Booked");
+    }
+    private void unbook(String[] params)throws CommandException{
+        if(params.length !=2)
+            throw new CommandException("Incorrect parameters");
+        String[] params1 = params[1].split(" ", 4);
+        if(params1.length != 4)
+            throw new CommandException("Incorrect parameters");
+        int row = Integer.parseInt(params1[0])-1;
+        int seat = Integer.parseInt(params1[1])-1;
+        LocalDate date = LocalDate.parse(params1[2]);
+        String name = params1[3].replace("\"", "");
+        Unbook unbook = new Commands.Unbook();
+        unbook.unbook(schedule, row, seat, date, name);
+        System.out.println("Seat Unbooked");
     }
 
     @Override
@@ -146,6 +157,9 @@ public class CommandProcessor implements ProcessCommand{
                 break;
             case "book":
                 book(command);
+                break;
+            case "unbook":
+                unbook(command);
                 break;
             default:
                 throw new CommandException("Command not recognised!");
