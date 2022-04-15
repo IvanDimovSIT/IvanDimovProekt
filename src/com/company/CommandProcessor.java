@@ -65,15 +65,12 @@ public class CommandProcessor implements ProcessCommand{
         LocalDate date = LocalDate.parse(params1[0]);
         int hall = Integer.parseInt(params1[1]);
         String name = params1[2].replace("\"","");
-        try {
-            addEvent.addEvent(schedule, date, hall-1 , name);
-        } catch (EventsException e) {
-            throw new CommandException(e.getMessage());
-        }
+        addEvent.addEvent(schedule, date, hall-1 , name);
+
         System.out.println("event added");
     }
 
-    public void help(){
+    private void help(){
         System.out.println("The following commands are supported:");
         Help help = new Commands.Help();
         for (String i: help.allCommands()) {
@@ -81,11 +78,11 @@ public class CommandProcessor implements ProcessCommand{
         }
     }
 
-    public void freeSeats(String[] params)throws CommandException{
+    private void freeSeats(String[] params)throws CommandException{
         if(params.length !=2)
             throw new CommandException("Incorrect parameters");
         String[] params1 = params[1].split(" ", 2);
-        if(params.length!=2)
+        if(params1.length!=2)
             throw new CommandException("Incorrect parameters");
         FreeSeats freeSeats = new Commands.FreeSeats();
         LocalDate date = LocalDate.parse(params1[0]);
@@ -98,7 +95,6 @@ public class CommandProcessor implements ProcessCommand{
         }
         SeatsOutput seatsOutput = new Console.SeatsOutput();
         seatsOutput.print(free);
-
     }
 
     private void book(String[] params)throws CommandException{
@@ -163,6 +159,19 @@ public class CommandProcessor implements ProcessCommand{
         seatsOutput.print(booked);
     }
 
+    private void check(String[] params)throws CommandException{
+        if(params.length !=2)
+            throw new CommandException("Incorrect parameters");
+        Check checkCode = new Commands.Check();
+        Seat seat = checkCode.checkCode(schedule, params[1]);
+        if(seat != null) {
+            System.out.println("Ticket is valid");
+            System.out.println("Seat:"+seat);
+        }
+        else
+            System.out.println("Ticket is NOT valid!");
+    }
+
     @Override
     public void process(String[] command)throws CommandException {
         switch (command[0]){
@@ -198,6 +207,9 @@ public class CommandProcessor implements ProcessCommand{
                 break;
             case "bookings":
                 bookings(command);
+                break;
+            case "check":
+                check(command);
                 break;
             default:
                 throw new CommandException("Command not recognised!");

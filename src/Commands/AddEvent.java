@@ -1,24 +1,33 @@
 package Commands;
 
-import com.company.EventsException;
-import com.company.Hall;
-import com.company.HallsDay;
-import com.company.Schedule;
+import com.company.*;
 
 import java.time.LocalDate;
 
 public class AddEvent implements com.company.AddEvent {
     @Override
-    public void addEvent(Schedule schedule, LocalDate date, int hallNumber, String name) throws EventsException{
+    public void addEvent(Schedule schedule, LocalDate date, int hallNumber, String name) throws CommandException {
 
-        if(schedule.getHallsForDay(date) == null) schedule.addHallsForDay(date);
+        if(schedule.getHallsForDay(date) == null) {
+            try {
+                schedule.addHallsForDay(date);
+            } catch (EventsException e) {
+                throw new CommandException("Hall's booked!");
+            }
+        }
 
         HallsDay hallsDay = schedule.getHallsForDay(date);
+
+        for (Hall i: hallsDay.getHalls()) {
+            if(i.getShowName() != null && i.getShowName().equals(name))
+                throw new CommandException("Same show on that date!");
+        }
+
         Hall hall = hallsDay.getHall(hallNumber);
 
         if(hall.getShowName() == null){
             hall.setShowName(name);
-        }else throw new EventsException("Can't add show");
+        }else throw new CommandException("Hall's booked!");
 
     }
 }
