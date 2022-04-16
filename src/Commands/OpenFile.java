@@ -9,7 +9,7 @@ public class OpenFile implements com.company.OpenFile {
     @Override
     public void open(Schedule schedule ,String fileName) throws CommandException {
         com.company.ScheduleDAO scheduleDAO = new XML.ScheduleDAO();
-        Schedule schedule1 = null;
+        Schedule schedule1;
         try {
             schedule1 = scheduleDAO.loadFromFile(fileName);
         } catch (FileNotFoundException e) {

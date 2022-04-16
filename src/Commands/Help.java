@@ -14,7 +14,8 @@ public class Help implements com.company.Help {
             "unbook <row> <seat> <date> <name>\t\tUnbooks the seat for the show <name> on <date> in row <row> in seat <seat>",
             "buy <row> <seat> <date> <name>\t\t\tBuys the free or booked seat for the show <name> on <date> in row <row> in seat <seat>",
             "bookings [<date>] [<name>]\t\t\t\tShows all the booked days for the show <name> on <date>, if name is skipped then lists for all shows on that day, if both are skipped then lists all booked seats",
-            "check <code>\t\t\t\t\t\t\tChecks if thicket code <code> is valid and displays the seat number"
+            "check <code>\t\t\t\t\t\t\tChecks if thicket code <code> is valid and displays the seat number",
+            "report <from> <to> [<hall>]\t\t\t\tShows all the bought tickets form date <from> to date <to> in hall <hall>, if <hall> is skipped then the sales for all halls are shown"
     };
 
     @Override

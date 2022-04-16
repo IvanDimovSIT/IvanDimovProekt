@@ -1,8 +1,11 @@
-package Commands;
+package Commands.TicketCodes;
+
+import Commands.Decode;
+import Commands.TicketCodeException;
 
 import java.time.LocalDate;
 
-public class Decoder implements Decode{
+public class Decoder implements Decode {
     private int row;
     private int seat;
     private int hallNumber;

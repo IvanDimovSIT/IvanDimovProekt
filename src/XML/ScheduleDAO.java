@@ -6,6 +6,7 @@ import java.beans.*;
 import java.io.*;
 import java.time.LocalDate;
 
+//https://www.edureka.co/blog/serialization-of-java-objects-to-xml-using-xmlencoder-decoder/?fbclid=IwAR2tzP9l5_o53ipMA7VcxHy5wFAiZpRADrZLhB9DyH1ASIIx9jynis7VbMk
 public class ScheduleDAO implements com.company.ScheduleDAO {
 
     @Override

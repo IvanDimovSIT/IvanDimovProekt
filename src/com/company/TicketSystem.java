@@ -42,6 +42,7 @@ public class TicketSystem {
                 System.out.println("Incorrectly entered number!");
             }
         }
+        System.out.println("Exiting the program...");
     }
 
 }

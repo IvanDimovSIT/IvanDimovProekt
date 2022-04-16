@@ -2,6 +2,7 @@ package com.company;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 public class CommandProcessor implements ProcessCommand{
     private Schedule schedule;
@@ -25,14 +26,14 @@ public class CommandProcessor implements ProcessCommand{
         String fileName = params[1].replace("\"", "");
         lastFile = fileName;
         saveAs.saveAs(schedule, fileName);
-        System.out.println("file saved");
+        System.out.println("Successfully saved to "+fileName);
     }
 
     private void save() throws CommandException{
         SaveAs saveAs = new Commands.SaveAs();
         if(lastFile != null) {
             saveAs.saveAs(schedule, lastFile);
-            System.out.println("file saved");
+            System.out.println("Successfully saved "+lastFile);
         }
         else
             System.out.println("No file found!");
@@ -42,7 +43,7 @@ public class CommandProcessor implements ProcessCommand{
         CloseFile closeFile = new Commands.CloseFile();
         closeFile.closeFile(schedule, numberOfHalls, rows, seats);
         lastFile = null;
-        System.out.println("file closed");
+        System.out.println("File closed");
     }
 
     private void open(String[] params)throws CommandException{
@@ -52,7 +53,7 @@ public class CommandProcessor implements ProcessCommand{
         String fileName = params[1].replace("\"", "");
         lastFile = fileName;
         openFile.open(schedule, fileName);
-        System.out.println("file opened");
+        System.out.println("Successfully opened "+fileName);
     }
 
     private void addEvent(String[] params)throws CommandException{
@@ -67,7 +68,7 @@ public class CommandProcessor implements ProcessCommand{
         String name = params1[2].replace("\"","");
         addEvent.addEvent(schedule, date, hall-1 , name);
 
-        System.out.println("event added");
+        System.out.println("Event added");
     }
 
     private void help(){
@@ -172,6 +173,32 @@ public class CommandProcessor implements ProcessCommand{
             System.out.println("Ticket is NOT valid!");
     }
 
+    private void report(String[] params)throws CommandException{
+        if(params.length !=2)
+            throw new CommandException("Incorrect parameters");
+        String[] params1 = params[1].split(" ", 3);
+        if(params1.length !=2 && params1.length != 3)
+            throw new CommandException("Incorrect parameters");
+        LocalDate from = LocalDate.parse(params1[0]);
+        LocalDate to = LocalDate.parse(params1[1]);
+        Integer hallNumber = null;
+        if(params1.length == 3)
+            hallNumber = Integer.parseInt(params1[2])-1;
+
+        Report report = new Commands.Report();
+
+        Map<String, Integer> sales = report.reportSales(schedule, from, to, hallNumber);
+        if(sales.size() == 0)
+            System.out.println("No shows!");
+        else {
+            for (Map.Entry<String, Integer> i: sales.entrySet()) {
+                System.out.println("Show:"+i.getKey()+" Sales:"+i.getValue());
+            }
+
+        }
+
+    }
+
     @Override
     public void process(String[] command)throws CommandException {
         switch (command[0]){
@@ -210,6 +237,9 @@ public class CommandProcessor implements ProcessCommand{
                 break;
             case "check":
                 check(command);
+                break;
+            case "report":
+                report(command);
                 break;
             default:
                 throw new CommandException("Command not recognised!");
