@@ -101,14 +101,21 @@ public class CommandProcessor implements ProcessCommand{
     private void book(String[] params)throws CommandException{
         if(params.length !=2)
             throw new CommandException("Incorrect parameters");
-        String[] params1 = params[1].split(" ", 5);
-        if(params1.length != 5)
+        String[] params1 = params[1].split(" ", 4);
+        if(params1.length != 4)
             throw new CommandException("Incorrect parameters");
         int row = Integer.parseInt(params1[0])-1;
         int seat = Integer.parseInt(params1[1])-1;
         LocalDate date = LocalDate.parse(params1[2]);
-        String name = params1[3];
-        String note = params1[4];
+        String nameAndNote = params1[3];
+        if(nameAndNote.charAt(0) != '\"')
+            throw new CommandException("Not using \" \"");
+        String[] params2 = nameAndNote.replaceFirst("\"", "").split("\"", 2);
+        if(params2.length != 2)
+            throw new CommandException("Incorrect parameters");
+
+        String name = params2[0];
+        String note = params2[1].trim().replace("\"", "");
         Book book = new Commands.Book();
         book.book(schedule, row, seat, date, name, note);
         System.out.println("Seat Booked");

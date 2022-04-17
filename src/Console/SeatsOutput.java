@@ -12,7 +12,7 @@ public class SeatsOutput implements com.company.SeatsOutput {
         else
         for (Seat seat: seats) {
             if(seat.getNote() != null && !seat.getNote().isEmpty())
-                System.out.println(seat + "-" + seat.getNote());
+                System.out.println(seat + "\uD83D\uDCDD" + seat.getNote());
             else
                 System.out.println(seat);
         }
