@@ -31,6 +31,7 @@ public class Buy implements com.company.Buy {
         if(seat1.getSeatState() == SeatState.Bought)
             throw new CommandException("Seat's already bought!");
         seat1.setNote(null);
+        hall.setNumberBought(hall.getNumberBought() + 1);
         seat1.setSeatState(SeatState.Bought);
         GenerateCode generateCode = new CodeGenerator();
         return generateCode.getCode(seat1, hallNum, date);

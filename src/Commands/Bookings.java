@@ -41,7 +41,7 @@ public class Bookings implements com.company.Bookings {
             if(i != null && i.getShowName() != null && i.getShowName().equals(name))
                 hall = i;
         }
-        if(hall == null)throw new CommandException("Show not found on that day!");
+        if(hall == null)throw new CommandException("Show \"" + name + "\" not found on that day!");
         return findBooked.findSeats(hall, SeatState.Booked);
     }
 

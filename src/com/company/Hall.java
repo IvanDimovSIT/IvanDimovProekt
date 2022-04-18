@@ -8,6 +8,7 @@ public class Hall {
     private int maxRows;
     private int maxSeats;
     private Seat[][] seats;
+    private int numberBought;
 
     public Hall(){}
 
@@ -21,6 +22,7 @@ public class Hall {
                 seats[row][seat] = new Seat(row, seat);
             }
         }
+        numberBought = 0;
     }
 
     public String getShowName() {
@@ -72,5 +74,13 @@ public class Hall {
 
     public void setSeats(Seat[][] seats) {
         this.seats = seats;
+    }
+
+    public int getNumberBought() {
+        return numberBought;
+    }
+
+    public void setNumberBought(int numberBought) {
+        this.numberBought = numberBought;
     }
 }

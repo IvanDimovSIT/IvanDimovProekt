@@ -161,7 +161,7 @@ public class CommandProcessor implements ProcessCommand{
             String[] params1 = params[1].split(" ", 2);
             date = LocalDate.parse(params1[0]);
             if(params1.length==2 && params1[1] != null)
-                name = params1[1];
+                name = params1[1].replace("\"", "");
         }
         booked = bookings.getBookedSeats(schedule, date, name);
         seatsOutput.print(booked);
@@ -206,6 +206,18 @@ public class CommandProcessor implements ProcessCommand{
 
     }
 
+    private void top(String[] params){
+        Integer num = null;
+        Top top = new Commands.Top();
+        if(params.length == 2)
+            num = Integer.parseInt(params[1]);
+        List<Map.Entry<String, Integer>> statistics = top.topShows(schedule, num);
+        System.out.println("Top "+(num==null?"":num+" ")+"shows:");
+        for (Map.Entry<String, Integer> i: statistics) {
+            System.out.println("\""+i.getKey() + "\":" + i.getValue()+" sales");
+        }
+    }
+
     @Override
     public void process(String[] command)throws CommandException {
         switch (command[0]){
@@ -247,6 +259,9 @@ public class CommandProcessor implements ProcessCommand{
                 break;
             case "report":
                 report(command);
+                break;
+            case "top":
+                top(command);
                 break;
             default:
                 throw new CommandException("Command not recognised!");

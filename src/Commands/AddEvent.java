@@ -7,6 +7,8 @@ import java.time.LocalDate;
 public class AddEvent implements com.company.AddEvent {
     @Override
     public void addEvent(Schedule schedule, LocalDate date, int hallNumber, String name) throws CommandException {
+        if(name == null || name.isBlank())
+            throw new CommandException("Show name is not entered!");
 
         if(schedule.getHallsForDay(date) == null) {
             try {
