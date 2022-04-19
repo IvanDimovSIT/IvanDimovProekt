@@ -2,7 +2,9 @@ package com.company;
 
 import java.time.LocalDate;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class Schedule {
     private Map<LocalDate, HallsDay> halls;
@@ -69,4 +71,25 @@ public class Schedule {
     public void setHallSeats(int[] hallSeats) {
         this.hallSeats = hallSeats;
     }
+
+    private boolean allEmpty(HallsDay hall){
+        for (Hall h: hall.getHalls()) {
+            if(h.getShowName() != null)
+                return false;
+        }
+        return true;
+    }
+
+    public void removeEmpty(){
+        Set<LocalDate> toRemove = new HashSet<>();
+        for (Map.Entry<LocalDate, HallsDay> i: halls.entrySet()) {
+            if(allEmpty(i.getValue())){
+               toRemove.add(i.getKey());
+            }
+        }
+        for (LocalDate i: toRemove) {
+            halls.remove(i);
+        }
+    }
+
 }

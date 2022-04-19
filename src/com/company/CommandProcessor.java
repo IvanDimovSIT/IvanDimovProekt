@@ -3,6 +3,7 @@ package com.company;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 public class CommandProcessor implements ProcessCommand{
     private Schedule schedule;
@@ -218,6 +219,37 @@ public class CommandProcessor implements ProcessCommand{
         }
     }
 
+    private void worst(String[] params)throws CommandException{
+        final double threshold = 10.0;
+        if(params.length !=2)
+            throw new CommandException("Incorrect parameters");
+        String[] params1 = params[1].split(" ", 3);
+        if(params1.length !=2)
+            throw new CommandException("Incorrect parameters");
+
+
+        LocalDate from = LocalDate.parse(params1[0]);
+        LocalDate to = LocalDate.parse(params1[1]);
+
+        Worst worst = new Commands.Worst(threshold);
+        System.out.println("Shows with less than "+threshold+"% of seats bought:");
+        for (Map.Entry<String, Double> i: worst.getWorst(schedule, from, to).entrySet()) {
+            System.out.println(i.getKey() + ":" + Math.round(i.getValue()) + "%");
+        }
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Remove(Y/N)?");
+        String input;
+        do{
+            input = scanner.nextLine();
+        }while (!input.equalsIgnoreCase("Y") && !input.equalsIgnoreCase("N"));
+
+        if(input.equalsIgnoreCase("Y")){
+            worst.removeWorst(schedule, from, to);
+            System.out.println("Removed");
+        }
+    }
+
     @Override
     public void process(String[] command)throws CommandException {
         switch (command[0]){
@@ -262,6 +294,9 @@ public class CommandProcessor implements ProcessCommand{
                 break;
             case "top":
                 top(command);
+                break;
+            case "worst":
+                worst(command);
                 break;
             default:
                 throw new CommandException("Command not recognised!");

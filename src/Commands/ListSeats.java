@@ -11,6 +11,7 @@ import java.util.List;
 public class ListSeats implements FindSeats{
     @Override
     public List<Seat> findSeats(Hall hall, SeatState seatState) {
+        if(hall.getShowName() == null)return null;
         List<Seat> seats = new ArrayList<>();
         for (int row = 0; row < hall.getMaxRows(); row++) {
             for (int seat = 0; seat < hall.getMaxSeats(); seat++) {
