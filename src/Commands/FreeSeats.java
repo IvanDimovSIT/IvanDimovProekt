@@ -12,7 +12,7 @@ public class FreeSeats implements com.company.FreeSeats {
         if(hallsDay==null)throw new EventsException("No Events on this date");
         Hall hall = null;
         for (Hall i: hallsDay.getHalls()) {
-            if(i.getShowName()!=null && i.getShowName().equals(name))
+            if(i != null && i.getShowName()!=null && i.getShowName().equals(name))
                 hall = i;
         }
         if(hall == null)throw new EventsException("No \""+name+"\" shows on this date");

@@ -21,7 +21,7 @@ public class Top implements com.company.Top {
 
         for (HallsDay hd: schedule.getHalls().values()) {
             for (Hall h: hd.getHalls()) {
-                if(h.getShowName() == null)continue;
+                if(h == null || h.getShowName() == null)continue;
                 if(statistics.containsKey(h.getShowName())){
                     statistics.put(h.getShowName(), statistics.get(h.getShowName()) + h.getNumberBought());
                 }else{

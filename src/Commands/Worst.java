@@ -1,5 +1,6 @@
 package Commands;
 
+import com.company.EventsException;
 import com.company.Hall;
 import com.company.HallsDay;
 import com.company.Schedule;
@@ -12,7 +13,7 @@ public class Worst implements com.company.Worst {
         private int bought;
         private int total;
 
-        public BoughtPercent(int bought, int total) {
+        private BoughtPercent(int bought, int total) {
             this.bought = bought;
             this.total = total;
         }
@@ -21,16 +22,8 @@ public class Worst implements com.company.Worst {
             return bought;
         }
 
-        public void setBought(int bought) {
-            this.bought = bought;
-        }
-
         public int getTotal() {
             return total;
-        }
-
-        public void setTotal(int total) {
-            this.total = total;
         }
 
         public double getPercent(){
@@ -53,7 +46,7 @@ public class Worst implements com.company.Worst {
         for (Map.Entry<LocalDate, HallsDay> i: perDate.entrySet()) {
             if(i.getKey().isEqual(from) || i.getKey().isEqual(to) || (i.getKey().isAfter(from) && i.getKey().isBefore(to))){
                 for (Hall h: i.getValue().getHalls()) {
-                    if(h.getShowName() == null)continue;
+                    if(h == null || h.getShowName() == null)continue;
                     if(statistics.containsKey(h.getShowName())){
                         BoughtPercent previous = statistics.get(h.getShowName());
                         statistics.put(h.getShowName(),
@@ -85,10 +78,22 @@ public class Worst implements com.company.Worst {
             throw new RuntimeException("Set worstShows not initialised!");
         for (Map.Entry<LocalDate, HallsDay> i: schedule.getHalls().entrySet()) {
             if(i.getKey().isEqual(from) || i.getKey().isEqual(to) || (i.getKey().isAfter(from) && i.getKey().isBefore(to))){
-                for (Hall h: i.getValue().getHalls()) {
-                    if(worstShows.contains(h.getShowName()))
-                        h.setShowName(null);
+                //for (Hall h: i.getValue().getHalls()) {
+                //    if(h != null && worstShows.contains(h.getShowName()))
+                //        h.setShowName(null);
+                //}
+                HallsDay hallsDay = i.getValue();
+                Hall[] halls = hallsDay.getHalls();
+                for (int j = 0; j < halls.length; j++) {
+                    if(halls[j] != null && worstShows.contains(halls[j].getShowName())) {
+                        try {
+                            hallsDay.remove(j);
+                        } catch (EventsException e) {
+                            e.printStackTrace();
+                        }
+                    }
                 }
+
             }
         }
         schedule.removeEmpty();

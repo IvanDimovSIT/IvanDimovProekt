@@ -15,7 +15,7 @@ public class Buy implements com.company.Buy {
         Hall[] halls = hallsDay.getHalls();
 
         for (int i = 0; i < halls.length; i++) {
-            if(halls[i].getShowName() != null && halls[i].getShowName().equals(name)){
+            if(halls[i] != null && halls[i].getShowName() != null && halls[i].getShowName().equals(name)){
                 hall = halls[i];
                 hallNum = i;
             }

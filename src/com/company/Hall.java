@@ -1,8 +1,5 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Hall {
     private String showName;
     private int maxRows;
@@ -35,17 +32,6 @@ public class Hall {
 
     public int getMaxSeats() {
         return maxSeats;
-    }
-
-    public List<Seat> getFreeSeats(){
-        List<Seat> freeSeats = new ArrayList<>();
-        for(int row = 0; row<maxRows; row++){
-            for(int seat = 0; seat<maxSeats; seat++) {
-                if(seats[row][seat].getSeatState() == SeatState.Free)
-                    freeSeats.add(seats[row][seat]);
-            }
-        }
-        return freeSeats;
     }
 
     public Seat getSeat(int row, int place)throws SeatException{

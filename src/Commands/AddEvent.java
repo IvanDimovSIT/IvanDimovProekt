@@ -21,15 +21,20 @@ public class AddEvent implements com.company.AddEvent {
         HallsDay hallsDay = schedule.getHallsForDay(date);
 
         for (Hall i: hallsDay.getHalls()) {
-            if(i.getShowName() != null && i.getShowName().equals(name))
+            if(i != null && i.getShowName() != null && i.getShowName().equals(name))
                 throw new CommandException("Same show on that date!");
         }
 
         Hall hall = hallsDay.getHall(hallNumber);
 
-        if(hall.getShowName() == null){
-            hall.setShowName(name);
-        }else throw new CommandException("Hall's booked!");
+        if(hall != null)
+            throw new CommandException("Hall's booked!");
+
+        try {
+            hallsDay.add(hallNumber, name);
+        } catch (EventsException e) {
+            e.printStackTrace();
+        }
 
     }
 }

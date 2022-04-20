@@ -13,7 +13,7 @@ public class Book implements com.company.Book {
 
         Hall hall = null;
         for (Hall i: hallsDay.getHalls()) {
-            if(i.getShowName()!=null && i.getShowName().equals(name))
+            if(i != null && i.getShowName()!=null && i.getShowName().equals(name))
                 hall = i;
         }
         if(hall == null)throw new CommandException("show \""+name+"\" not found!");

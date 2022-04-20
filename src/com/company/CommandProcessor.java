@@ -202,16 +202,16 @@ public class CommandProcessor implements ProcessCommand{
             for (Map.Entry<String, Integer> i: sales.entrySet()) {
                 System.out.println("Show:"+i.getKey()+" Sales:"+i.getValue());
             }
-
         }
-
     }
 
-    private void top(String[] params){
+    private void top(String[] params) throws CommandException{
         Integer num = null;
         Top top = new Commands.Top();
         if(params.length == 2)
             num = Integer.parseInt(params[1]);
+        if(num != null && num<=0)
+            throw new CommandException("Invalid parameter");
         List<Map.Entry<String, Integer>> statistics = top.topShows(schedule, num);
         System.out.println("Top "+(num==null?"":num+" ")+"shows:");
         for (Map.Entry<String, Integer> i: statistics) {

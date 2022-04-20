@@ -9,22 +9,24 @@ import java.util.Set;
 public class Schedule {
     private Map<LocalDate, HallsDay> halls;
     private int numberOfHalls;
-    private int[] hallRows;
-    private int[] hallSeats;
+    private static int[] hallRows;
+    private static int[] hallSeats;
 
     public Schedule(){}
 
     public Schedule(int numberOfHalls, int[] hallRows, int[] hallSeats) {
         this.numberOfHalls = numberOfHalls;
-        this.hallRows = hallRows;
-        this.hallSeats = hallSeats;
+        Schedule.hallRows = hallRows;
+        Schedule.hallSeats = hallSeats;
         halls = new HashMap<>();
+        HallsDay.setHallRows(hallRows);
+        HallsDay.setHallSeats(hallSeats);
     }
 
     public void reset(int numberOfHalls, int[] hallRows, int[] hallSeats){
         this.numberOfHalls = numberOfHalls;
-        this.hallRows = hallRows;
-        this.hallSeats = hallSeats;
+        Schedule.hallRows = hallRows;
+        Schedule.hallSeats = hallSeats;
         halls = new HashMap<>();
     }
 
@@ -36,7 +38,7 @@ public class Schedule {
         if(halls.containsKey(date))
             throw new EventsException("Already initialised");
         else{
-            halls.put(date, new HallsDay(numberOfHalls,hallRows, hallSeats));
+            halls.put(date, new HallsDay(numberOfHalls));
         }
     }
 
@@ -65,16 +67,16 @@ public class Schedule {
     }
 
     public void setHallRows(int[] hallRows) {
-        this.hallRows = hallRows;
+        Schedule.hallRows = hallRows;
     }
 
     public void setHallSeats(int[] hallSeats) {
-        this.hallSeats = hallSeats;
+        Schedule.hallSeats = hallSeats;
     }
 
     private boolean allEmpty(HallsDay hall){
         for (Hall h: hall.getHalls()) {
-            if(h.getShowName() != null)
+            if(h != null && h.getShowName() != null)
                 return false;
         }
         return true;

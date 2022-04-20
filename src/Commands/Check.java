@@ -26,6 +26,7 @@ public class Check implements com.company.Check {
         HallsDay halls = schedule.getHallsForDay(date);
         if(halls == null)return null;
         Hall hall = halls.getHall(hallNumber);
+        if(hall == null)return null;
         try {
             Seat seat1 = hall.getSeat(row, seat);
             if(seat1.getSeatState() != SeatState.Bought)

@@ -22,7 +22,7 @@ public class Report implements com.company.Report {
 
                 for (int hall=0; hall<halls.length; hall++) {
 
-                    if(halls[hall].getShowName() == null) continue;
+                    if(halls[hall] == null || halls[hall].getShowName() == null) continue;
                     else if(hallNumber == null || hallNumber == hall){
 
                         if(sales.containsKey(halls[hall].getShowName()))

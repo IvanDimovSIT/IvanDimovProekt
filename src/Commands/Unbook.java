@@ -11,7 +11,7 @@ public class Unbook implements com.company.Unbook {
         if(hallsDay == null)throw new CommandException("No events on that date");
         Hall hall = null;
         for (Hall i: hallsDay.getHalls()) {
-            if(i.getShowName()!=null && i.getShowName().equals(name))
+            if(i != null && i.getShowName()!=null && i.getShowName().equals(name))
                 hall = i;
         }
         if(hall == null)throw new CommandException("show \""+name+"\" not found!");
