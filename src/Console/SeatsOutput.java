@@ -19,3 +19,4 @@ public class SeatsOutput implements com.company.SeatsOutput {
         }
     }
 }
+

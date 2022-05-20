@@ -24,3 +24,4 @@ public class OpenFile implements com.company.OpenFile {
         schedule.setHallSeats(schedule1.getHallSeats());
     }
 }
+

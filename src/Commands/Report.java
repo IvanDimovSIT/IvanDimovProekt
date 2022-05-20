@@ -37,3 +37,4 @@ public class Report implements com.company.Report {
         return sales;
     }
 }
+

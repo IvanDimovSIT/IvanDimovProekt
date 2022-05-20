@@ -59,3 +59,4 @@ public class Bookings implements com.company.Bookings {
             return getBookedSeatsDayName(schedule, date, name);
     }
 }
+

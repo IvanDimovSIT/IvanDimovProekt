@@ -54,3 +54,4 @@ public class Seat {
         this.place = place;
     }
 }
+

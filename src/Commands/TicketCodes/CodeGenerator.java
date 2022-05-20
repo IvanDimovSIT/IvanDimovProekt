@@ -13,3 +13,4 @@ public class CodeGenerator implements GenerateCode {
                 date.getMonth().getValue()+"-"+date.getDayOfMonth();
     }
 }
+

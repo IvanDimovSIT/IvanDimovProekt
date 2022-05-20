@@ -23,3 +23,4 @@ public class FreeSeats implements com.company.FreeSeats {
         return freeSeats.findSeats(hall, SeatState.Free);
     }
 }
+

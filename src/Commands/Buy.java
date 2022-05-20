@@ -42,3 +42,4 @@ public class Buy implements com.company.Buy {
         return generateCode.getCode(seat1, hallNum, date);
     }
 }
+

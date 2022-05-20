@@ -10,3 +10,4 @@ public class CloseFile implements com.company.CloseFile {
     }
 
 }
+
