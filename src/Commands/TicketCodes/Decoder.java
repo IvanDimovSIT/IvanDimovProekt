@@ -11,6 +11,7 @@ public class Decoder implements Decode {
     private int hallNumber;
     private LocalDate date;
 
+    //определяме мястото, датата и залата по зададен код
     @Override
     public void decode(String code) throws TicketCodeException {
         if(code==null)throw new TicketCodeException();
@@ -25,6 +26,7 @@ public class Decoder implements Decode {
         }
     }
 
+    //получаме информацията за мястото
     @Override
     public int getRow() {
         return row;

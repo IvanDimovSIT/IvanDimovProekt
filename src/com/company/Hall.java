@@ -1,5 +1,6 @@
 package com.company;
 
+//клас зала за представления
 public class Hall {
     private String showName;
     private int maxRows;
@@ -44,7 +45,6 @@ public class Hall {
     public void setShowName(String showName) {
         this.showName = showName;
     }
-
 
     public void setMaxRows(int maxRows) {
         this.maxRows = maxRows;

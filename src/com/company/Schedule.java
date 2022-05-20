@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+//клас разписание на представленията
 public class Schedule {
     private Map<LocalDate, HallsDay> halls;
     private int numberOfHalls;
@@ -23,6 +24,7 @@ public class Schedule {
         HallsDay.setHallSeats(hallSeats);
     }
 
+    //клас за анулиране на разписанието - използва се при затваряне на файл
     public void reset(int numberOfHalls, int[] hallRows, int[] hallSeats){
         this.numberOfHalls = numberOfHalls;
         Schedule.hallRows = hallRows;
@@ -82,6 +84,7 @@ public class Schedule {
         return true;
     }
 
+    //премахване на записите в датите където няма представления
     public void removeEmpty(){
         Set<LocalDate> toRemove = new HashSet<>();
         for (Map.Entry<LocalDate, HallsDay> i: halls.entrySet()) {

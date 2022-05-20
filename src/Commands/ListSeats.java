@@ -9,10 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListSeats implements FindSeats{
+    //намиране местата съответстващи на това дали за свободни, закупени или запазени
     @Override
     public List<Seat> findSeats(Hall hall, SeatState seatState) {
         if(hall == null || hall.getShowName() == null)return null;
         List<Seat> seats = new ArrayList<>();
+        //итерираме през всички места
         for (int row = 0; row < hall.getMaxRows(); row++) {
             for (int seat = 0; seat < hall.getMaxSeats(); seat++) {
                 try {

@@ -1,5 +1,6 @@
 package com.company;
 
+//клас отделно място в зала
 public class Seat {
     private SeatState seatState;
     private int row;

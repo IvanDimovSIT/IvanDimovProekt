@@ -6,8 +6,11 @@ import com.company.*;
 import java.time.LocalDate;
 
 public class Buy implements com.company.Buy {
+    //закупуване на билет
+    //връща кода на билета
     @Override
     public String buy(Schedule schedule, int row, int seat, LocalDate date, String name) throws CommandException {
+        //определяме валидността на данните и намираме мястото
         HallsDay hallsDay = schedule.getHallsForDay(date);
         if(hallsDay == null)throw new CommandException("No events on that date");
         Hall hall = null;
@@ -30,9 +33,11 @@ public class Buy implements com.company.Buy {
         }
         if(seat1.getSeatState() == SeatState.Bought)
             throw new CommandException("Seat's already bought!");
+        //премахваме бележката
         seat1.setNote(null);
         hall.setNumberBought(hall.getNumberBought() + 1);
         seat1.setSeatState(SeatState.Bought);
+        //определяме кода
         GenerateCode generateCode = new CodeGenerator();
         return generateCode.getCode(seat1, hallNum, date);
     }

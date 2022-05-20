@@ -3,6 +3,8 @@ package com.company;
 import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
+//клас билетна система
+//използван шаблон - singleton
 public class TicketSystem {
     private static TicketSystem instance;
     private static final int numberOfHalls = 4;
@@ -20,6 +22,7 @@ public class TicketSystem {
         return instance;
     }
 
+    //стартиране на програмата
     public void start(){
         ProcessCommand processCommand = new CommandProcessor(schedule, numberOfHalls, rows, seats);
         Scanner scanner = new Scanner(System.in);

@@ -19,7 +19,7 @@ public class Help implements com.company.Help {
             "top [<number>]\t\t\t\t\t\t\tShow the top <number> most watched shows, if <number> is skipped then shows all shows>",
             "worst <from> <to>\t\t\t\t\t\tShows the events with less than 10% sales in the period between <from> and <to>, then asks if they should be removed"
     };
-
+    //връшаме имената на командите, техните параметри и функцията им
     @Override
     public String[] allCommands() {
         return commands;

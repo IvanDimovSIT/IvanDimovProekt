@@ -1,5 +1,6 @@
 package com.company;
 
+//клас отговарящ на всички зали за един ден
 public class HallsDay {
     private Hall[] halls;
     private static int[] hallRows;
@@ -34,11 +35,6 @@ public class HallsDay {
         return halls[hallNum];
     }
 
-    public void setHalls(Hall hall, int hallNum){
-        halls[hallNum] = hall;
-    }
-
-
     public Hall[] getHalls() {
         return halls;
     }
@@ -47,12 +43,14 @@ public class HallsDay {
         this.halls = halls;
     }
 
+    //добавяне на зала по номер и име на представление
     public void add(int hallNum, String name)throws EventsException{
         if(hallNum>=hallRows.length || hallNum<0)
             throw new EventsException("Hall doesn't exit");
         halls[hallNum] = new Hall(name ,hallRows[hallNum] , hallSeats[hallNum]);
     }
 
+    // премахване на зала по нейния номер
     public void remove(int hallNum) throws EventsException{
         if(hallNum>=hallRows.length || hallNum<0)
             throw new EventsException("Hall doesn't exit");

@@ -6,6 +6,9 @@ import com.company.*;
 import java.time.LocalDate;
 
 public class Check implements com.company.Check {
+    //проверка на валидността на код
+    //ако е валиден връщаме мястото
+    //в противен случай връщаме null
     @Override
     public Seat checkCode(Schedule schedule, String code) {
         Decode decode = new Decoder();

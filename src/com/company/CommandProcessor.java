@@ -20,16 +20,20 @@ public class CommandProcessor implements ProcessCommand{
         lastFile = null;
     }
 
+    //private метод за запис във файл
     private void saveAs(String[] params)throws CommandException{
         if(params.length!=2)
             throw new CommandException("Incorrect parameters");
         SaveAs saveAs = new Commands.SaveAs();
+        //премахваме кавичките от името на файла
         String fileName = params[1].replace("\"", "");
+        //запазваме името на последно достъпения файл
         lastFile = fileName;
         saveAs.saveAs(schedule, fileName);
         System.out.println("Successfully saved to "+fileName);
     }
 
+    //private метод за запис във вече отворен файл
     private void save() throws CommandException{
         SaveAs saveAs = new Commands.SaveAs();
         if(lastFile != null) {
@@ -40,28 +44,34 @@ public class CommandProcessor implements ProcessCommand{
             System.out.println("No file found!");
     }
 
+    //private метод за затваряне на файл
     private void close(){
         CloseFile closeFile = new Commands.CloseFile();
         closeFile.closeFile(schedule, numberOfHalls, rows, seats);
+        //занулирваме името на последно достъпения файл
         lastFile = null;
         System.out.println("File closed");
     }
 
+    //private метод за отваряне на файл
     private void open(String[] params)throws CommandException{
         if(params.length!=2)
             throw new CommandException("Incorrect parameters");
         OpenFile openFile = new Commands.OpenFile();
+        //премахваме кавичките от името на файла
         String fileName = params[1].replace("\"", "");
         lastFile = fileName;
         openFile.open(schedule, fileName);
         System.out.println("Successfully opened "+fileName);
     }
 
+    //private метод за добавяне на ново събитие
     private void addEvent(String[] params)throws CommandException{
         if(params.length!=2)
             throw new CommandException("Incorrect parameters");
         AddEvent addEvent = new Commands.AddEvent();
         String[] params1 = params[1].split(" ", 3);
+        //получаваме параметрите
         if(params1.length!=3)
             throw new CommandException("Incorrect parameters");
         LocalDate date = LocalDate.parse(params1[0]);
@@ -72,6 +82,7 @@ public class CommandProcessor implements ProcessCommand{
         System.out.println("Event added");
     }
 
+    //private метод за отпечатване на всички команди и техните параметри
     private void help(){
         System.out.println("The following commands are supported:");
         Help help = new Commands.Help();
@@ -80,6 +91,7 @@ public class CommandProcessor implements ProcessCommand{
         }
     }
 
+    //private метод за отпечатване на свободните места
     private void freeSeats(String[] params)throws CommandException{
         if(params.length !=2)
             throw new CommandException("Incorrect parameters");
@@ -99,6 +111,7 @@ public class CommandProcessor implements ProcessCommand{
         seatsOutput.print(free);
     }
 
+    //private метод за запазване на място
     private void book(String[] params)throws CommandException{
         if(params.length !=2)
             throw new CommandException("Incorrect parameters");
@@ -122,6 +135,7 @@ public class CommandProcessor implements ProcessCommand{
         System.out.println("Seat Booked");
     }
 
+    //private метод за премахване на запазено на място
     private void unbook(String[] params)throws CommandException{
         if(params.length !=2)
             throw new CommandException("Incorrect parameters");
@@ -137,6 +151,7 @@ public class CommandProcessor implements ProcessCommand{
         System.out.println("Seat Unbooked");
     }
 
+    //private метод за закупуване на място
     private void buy(String[] params)throws CommandException{
         if(params.length !=2)
             throw new CommandException("Incorrect parameters");
@@ -148,16 +163,19 @@ public class CommandProcessor implements ProcessCommand{
         LocalDate date = LocalDate.parse(params1[2]);
         String name = params1[3].replace("\"", "");
         Buy buy = new Commands.Buy();
+        //определяне на кода на мястото
         String code = buy.buy(schedule, row, seat, date, name);
         System.out.println("Seat code: "+code);
     }
 
+    //private метод за отпечатване на запазените места
     private void bookings(String[] params)throws CommandException{
         Bookings bookings = new Commands.Bookings();
         SeatsOutput seatsOutput = new Console.SeatsOutput();
         List<Seat> booked;
         LocalDate date = null;
         String name = null;
+        //определяне броя на параметрите
         if(params.length == 2){
             String[] params1 = params[1].split(" ", 2);
             date = LocalDate.parse(params1[0]);
@@ -168,6 +186,7 @@ public class CommandProcessor implements ProcessCommand{
         seatsOutput.print(booked);
     }
 
+    //private метод за проверка на валидност на билет
     private void check(String[] params)throws CommandException{
         if(params.length !=2)
             throw new CommandException("Incorrect parameters");
@@ -181,6 +200,7 @@ public class CommandProcessor implements ProcessCommand{
             System.out.println("Ticket is NOT valid!");
     }
 
+    //private метод за отпечатване на закупените билети
     private void report(String[] params)throws CommandException{
         if(params.length !=2)
             throw new CommandException("Incorrect parameters");
@@ -205,6 +225,7 @@ public class CommandProcessor implements ProcessCommand{
         }
     }
 
+    //private метод за отпечатване на статистика за най-гледаните представления
     private void top(String[] params) throws CommandException{
         Integer num = null;
         Top top = new Commands.Top();
@@ -219,6 +240,7 @@ public class CommandProcessor implements ProcessCommand{
         }
     }
 
+    //private метод за отпечатване на най-малко гледаните представления
     private void worst(String[] params)throws CommandException{
         final double threshold = 10.0;
         if(params.length !=2)
@@ -236,7 +258,7 @@ public class CommandProcessor implements ProcessCommand{
         for (Map.Entry<String, Double> i: worst.getWorst(schedule, from, to).entrySet()) {
             System.out.println(i.getKey() + ":" + Math.round(i.getValue()) + "%");
         }
-
+        //премахване на представленията
         Scanner scanner = new Scanner(System.in);
         System.out.println("Remove(Y/N)?");
         String input;
@@ -250,6 +272,7 @@ public class CommandProcessor implements ProcessCommand{
         }
     }
 
+    //обработка на командите
     @Override
     public void process(String[] command)throws CommandException {
         switch (command[0]){

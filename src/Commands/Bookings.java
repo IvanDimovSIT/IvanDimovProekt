@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Bookings implements com.company.Bookings {
-
+    //намиране на всички запазени места
     private List<Seat> getAllBookedSeats(Schedule schedule){
         List<Seat> bookedSeats = new ArrayList<>();
         FindSeats findBooked = new ListSeats();
@@ -21,6 +21,7 @@ public class Bookings implements com.company.Bookings {
         return bookedSeats;
     }
 
+    //намиране на всички запазени места за дата
     private List<Seat> getBookedSeatsDay(Schedule schedule, LocalDate date)throws CommandException{
         List<Seat> bookedSeats = new ArrayList<>();
         FindSeats findBooked = new ListSeats();
@@ -32,6 +33,7 @@ public class Bookings implements com.company.Bookings {
         return bookedSeats;
     }
 
+    //намиране на всички запазени места за дата и име на представление
     private List<Seat> getBookedSeatsDayName(Schedule schedule, LocalDate date, String name)throws CommandException{
         FindSeats findBooked = new ListSeats();
         if(!schedule.getHalls().containsKey(date))throw new CommandException("No shows on that date!");
@@ -45,8 +47,10 @@ public class Bookings implements com.company.Bookings {
         return findBooked.findSeats(hall, SeatState.Booked);
     }
 
+    //намиране на запазените места според параметрите
     @Override
     public List<Seat> getBookedSeats(Schedule schedule, LocalDate date, String name) throws CommandException {
+        //извикваме съответиния private метод
         if(date == null)
             return getAllBookedSeats(schedule);
         else if(name == null)

@@ -5,8 +5,10 @@ import com.company.*;
 import java.time.LocalDate;
 
 public class AddEvent implements com.company.AddEvent {
+    //добавяне на събитие
     @Override
     public void addEvent(Schedule schedule, LocalDate date, int hallNumber, String name) throws CommandException {
+        //проверяваме за валидни данни
         if(name == null || name.isBlank())
             throw new CommandException("Show name is not entered!");
 
@@ -17,7 +19,7 @@ public class AddEvent implements com.company.AddEvent {
                 throw new CommandException("Hall's booked!");
             }
         }
-
+        //намираме залата за съответната дата
         HallsDay hallsDay = schedule.getHallsForDay(date);
 
         for (Hall i: hallsDay.getHalls()) {
