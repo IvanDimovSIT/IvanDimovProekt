@@ -9,7 +9,7 @@ public class AddEvent implements com.company.AddEvent {
     @Override
     public void addEvent(Schedule schedule, LocalDate date, int hallNumber, String name) throws CommandException {
         //проверяваме за валидни данни
-        if(name == null || name.isBlank())
+        if(name == null || name.isEmpty())
             throw new CommandException("Show name is not entered!");
 
         if(schedule.getHallsForDay(date) == null) {
