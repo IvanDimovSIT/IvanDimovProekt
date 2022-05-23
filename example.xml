@@ -1,0 +1,5541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_333" class="java.beans.XMLDecoder">
+ <object class="com.company.Schedule">
+  <void property="halls">
+   <object class="java.util.HashMap">
+    <void method="put">
+     <object class="java.time.LocalDate" method="of">
+      <int>2022</int>
+      <object class="java.lang.Enum" method="valueOf">
+       <class>java.time.Month</class>
+       <string>NOVEMBER</string>
+      </object>
+      <int>15</int>
+     </object>
+     <object class="com.company.HallsDay">
+      <void property="halls">
+       <array class="com.company.Hall" length="4">
+        <void index="0">
+         <object class="com.company.Hall">
+          <void property="maxRows">
+           <int>5</int>
+          </void>
+          <void property="maxSeats">
+           <int>12</int>
+          </void>
+          <void property="numberBought">
+           <int>19</int>
+          </void>
+          <void property="seats">
+           <array class="[Lcom.company.Seat;" length="5">
+            <void index="0">
+             <array class="com.company.Seat" length="12">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="seatState">
+                 <object class="java.lang.Enum" id="SeatState0" method="valueOf">
+                  <class>com.company.SeatState</class>
+                  <string>Bought</string>
+                 </object>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object class="java.lang.Enum" id="SeatState1" method="valueOf">
+                  <class>com.company.SeatState</class>
+                  <string>Booked</string>
+                 </object>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string>Note</string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState1"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object class="java.lang.Enum" id="SeatState2" method="valueOf">
+                  <class>com.company.SeatState</class>
+                  <string>Free</string>
+                 </object>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="1">
+             <array class="com.company.Seat" length="12">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="2">
+             <array class="com.company.Seat" length="12">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="3">
+             <array class="com.company.Seat" length="12">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="4">
+             <array class="com.company.Seat" length="12">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+           </array>
+          </void>
+          <void property="showName">
+           <string>Bon Jovi</string>
+          </void>
+         </object>
+        </void>
+       </array>
+      </void>
+     </object>
+    </void>
+    <void method="put">
+     <object class="java.time.LocalDate" method="of">
+      <int>2009</int>
+      <object class="java.lang.Enum" method="valueOf">
+       <class>java.time.Month</class>
+       <string>JANUARY</string>
+      </object>
+      <int>24</int>
+     </object>
+     <object class="com.company.HallsDay">
+      <void property="halls">
+       <array class="com.company.Hall" length="4">
+        <void index="1">
+         <object class="com.company.Hall">
+          <void property="maxRows">
+           <int>6</int>
+          </void>
+          <void property="maxSeats">
+           <int>10</int>
+          </void>
+          <void property="numberBought">
+           <int>4</int>
+          </void>
+          <void property="seats">
+           <array class="[Lcom.company.Seat;" length="6">
+            <void index="0">
+             <array class="com.company.Seat" length="10">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="1">
+             <array class="com.company.Seat" length="10">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="2">
+             <array class="com.company.Seat" length="10">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="3">
+             <array class="com.company.Seat" length="10">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="4">
+             <array class="com.company.Seat" length="10">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="5">
+             <array class="com.company.Seat" length="10">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string>Example Note</string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState1"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+           </array>
+          </void>
+          <void property="showName">
+           <string>Frank Reynolds</string>
+          </void>
+         </object>
+        </void>
+       </array>
+      </void>
+     </object>
+    </void>
+    <void method="put">
+     <object class="java.time.LocalDate" method="of">
+      <int>2022</int>
+      <object class="java.lang.Enum" id="Month0" method="valueOf">
+       <class>java.time.Month</class>
+       <string>JUNE</string>
+      </object>
+      <int>2</int>
+     </object>
+     <object class="com.company.HallsDay">
+      <void property="halls">
+       <array class="com.company.Hall" length="4">
+        <void index="1">
+         <object class="com.company.Hall">
+          <void property="maxRows">
+           <int>6</int>
+          </void>
+          <void property="maxSeats">
+           <int>10</int>
+          </void>
+          <void property="numberBought">
+           <int>2</int>
+          </void>
+          <void property="seats">
+           <array class="[Lcom.company.Seat;" length="6">
+            <void index="0">
+             <array class="com.company.Seat" length="10">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="1">
+             <array class="com.company.Seat" length="10">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="2">
+             <array class="com.company.Seat" length="10">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="3">
+             <array class="com.company.Seat" length="10">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="4">
+             <array class="com.company.Seat" length="10">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="5">
+             <array class="com.company.Seat" length="10">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+           </array>
+          </void>
+          <void property="showName">
+           <string>Bon Jovi</string>
+          </void>
+         </object>
+        </void>
+       </array>
+      </void>
+     </object>
+    </void>
+    <void method="put">
+     <object class="java.time.LocalDate" method="of">
+      <int>2022</int>
+      <object idref="Month0"/>
+      <int>1</int>
+     </object>
+     <object class="com.company.HallsDay">
+      <void property="halls">
+       <array class="com.company.Hall" length="4">
+        <void index="0">
+         <object class="com.company.Hall">
+          <void property="maxRows">
+           <int>5</int>
+          </void>
+          <void property="maxSeats">
+           <int>12</int>
+          </void>
+          <void property="numberBought">
+           <int>12</int>
+          </void>
+          <void property="seats">
+           <array class="[Lcom.company.Seat;" length="5">
+            <void index="0">
+             <array class="com.company.Seat" length="12">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string>Note for the seat</string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState1"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="1">
+             <array class="com.company.Seat" length="12">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="2">
+             <array class="com.company.Seat" length="12">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="3">
+             <array class="com.company.Seat" length="12">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="4">
+             <array class="com.company.Seat" length="12">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+           </array>
+          </void>
+          <void property="showName">
+           <string>Slavi Trifonov</string>
+          </void>
+         </object>
+        </void>
+        <void index="2">
+         <object class="com.company.Hall">
+          <void property="maxRows">
+           <int>8</int>
+          </void>
+          <void property="maxSeats">
+           <int>14</int>
+          </void>
+          <void property="numberBought">
+           <int>6</int>
+          </void>
+          <void property="seats">
+           <array class="[Lcom.company.Seat;" length="8">
+            <void index="0">
+             <array class="com.company.Seat" length="14">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="12">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>12</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="13">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>13</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="1">
+             <array class="com.company.Seat" length="14">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string>Desi Slava</string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState1"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="12">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>12</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="13">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>13</int>
+                </void>
+                <void property="row">
+                 <int>1</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="2">
+             <array class="com.company.Seat" length="14">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="12">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>12</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="13">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>13</int>
+                </void>
+                <void property="row">
+                 <int>2</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="3">
+             <array class="com.company.Seat" length="14">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="12">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>12</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="13">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>13</int>
+                </void>
+                <void property="row">
+                 <int>3</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="4">
+             <array class="com.company.Seat" length="14">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="12">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>12</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="13">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>13</int>
+                </void>
+                <void property="row">
+                 <int>4</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="5">
+             <array class="com.company.Seat" length="14">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState0"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="12">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>12</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="13">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>13</int>
+                </void>
+                <void property="row">
+                 <int>5</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="6">
+             <array class="com.company.Seat" length="14">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="12">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>12</int>
+                </void>
+                <void property="row">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="13">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>13</int>
+                </void>
+                <void property="row">
+                 <int>6</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void index="7">
+             <array class="com.company.Seat" length="14">
+              <void index="0">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="row">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>1</int>
+                </void>
+                <void property="row">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>2</int>
+                </void>
+                <void property="row">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>3</int>
+                </void>
+                <void property="row">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>4</int>
+                </void>
+                <void property="row">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>5</int>
+                </void>
+                <void property="row">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>6</int>
+                </void>
+                <void property="row">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>7</int>
+                </void>
+                <void property="row">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>8</int>
+                </void>
+                <void property="row">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>9</int>
+                </void>
+                <void property="row">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>10</int>
+                </void>
+                <void property="row">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>11</int>
+                </void>
+                <void property="row">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="12">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>12</int>
+                </void>
+                <void property="row">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+              <void index="13">
+               <object class="com.company.Seat">
+                <void property="note">
+                 <string></string>
+                </void>
+                <void property="place">
+                 <int>13</int>
+                </void>
+                <void property="row">
+                 <int>7</int>
+                </void>
+                <void property="seatState">
+                 <object idref="SeatState2"/>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+           </array>
+          </void>
+          <void property="showName">
+           <string>Desi Slava</string>
+          </void>
+         </object>
+        </void>
+       </array>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="numberOfHalls">
+   <int>4</int>
+  </void>
+ </object>
+</java>
